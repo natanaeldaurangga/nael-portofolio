@@ -1,0 +1,32 @@
+db_username: adm_portofolio
+db_password: portofolio_1041
+
+
+===================Cara handle input file di spring boot=====================
+1. https://www.youtube.com/watch?v=br0rN6hFvCE
+
+===========Fitur==============
+1. Menambahkan project:
+	=> input:
+		-> title <string>
+		-> description <string>
+		-> startDate <long> nanti di convert ke local date
+		-> endDate <long> nanti di convert ke local date
+		-> pictures <array<image>> pelajari lagi cara input image
+		-> links <array<string>>
+		-> techTool <array<string>>
+
+2. Menghapus project:
+	=> input:
+		-> secureId<string>
+
+3. mengupdate project:
+	3.1 mengganti title
+	3.2 mengganti deskripsi
+	3.3 mengubah start date
+	3.4 mengubah end date
+	3.5 menambahkan atau menghapus pictures
+	3.6 menambahkan atau menghapus link
+	3.7 menambahkan atau menghapus techTool
+
+4. menghidden project atau show project.

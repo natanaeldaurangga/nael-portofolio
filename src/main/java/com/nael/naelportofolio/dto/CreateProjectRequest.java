@@ -18,7 +18,7 @@ public class CreateProjectRequest {
 
 	private String title;
 	
-	private String descritpion;
+	private String description;
 	
 	private Long startDate;
 	

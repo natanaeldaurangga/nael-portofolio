@@ -1,5 +1,6 @@
 package com.nael.naelportofolio.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -22,12 +23,13 @@ import lombok.NoArgsConstructor;
 @Builder
 @SQLDelete(sql = "UPDATE tech_n_tool SET deleted = true WHERE id = ?")
 @Where(clause = "deleted=false OR deleted IS NULL")
-public class ProjectTechTool {
+public class ProjectTechTool extends AbstractBaseEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
+	@Column(nullable = false)
 	private String name;
 	
 	private String description;
